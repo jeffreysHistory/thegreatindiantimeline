@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8e1; /* Soft golden yellow background */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffb74d; /* Warm orange header */
+    color: #3e2723; /* Dark brown text for better contrast */
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+
+#timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.timeline-event {
+    background-color: #fff3e0; /* Lighter golden yellow event box */
+    border-left: 5px solid #ff9800; /* Bold orange border */
+    margin: 10px 0;
+    padding: 15px;
+    width: 60%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.timeline-event:hover {
+    background-color: #ffe0b2; /* Light orange on hover */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background overlay */
+}
+
+.modal-content {
+    background-color: #fff8e1; /* Golden yellow modal background */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-button {
+    color: #ff9800; /* Orange close button */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #f57c00; /* Darker orange on hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
